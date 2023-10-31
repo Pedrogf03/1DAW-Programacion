@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class probador {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("¿Cuántas veces quiere ejecutar este programa?");
+		int repeticiones = sc.nextInt();
+		
+		for(int i = 1; i <= repeticiones; i++) {
+			
+			
+			
+		}
+		
+	}
+}

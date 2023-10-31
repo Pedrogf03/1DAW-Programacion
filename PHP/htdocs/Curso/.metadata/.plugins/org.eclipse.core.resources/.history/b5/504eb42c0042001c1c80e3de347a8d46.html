@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>Unidad 4</title>
+</head>
+<body>
+    <h1>Ejercicio 10 PhP</h1>
+    <p>Programa que muestra las tablas de multiplicar.</p>
+<?php 
+$num = $_POST['num'];
+$mayor = $_POST['mayor'];
+$repetir = $_POST['repetir'];
+$num2 = $_POST['num2'];
+$numeros = $_POST['numeros'];
+$suma = $_POST['suma'];
+
+if((int)$num >= 0){
+
+    if((int)$num % 2 == 0) {
+        
+        if((int)$num > (int)$num2) {
+            
+            (int)$mayor = (int)$num;
+            (int)$num2 = (int)$num;
+            
+        } else if ((int)$num2 > (int)$num){
+            
+            (int)$mayor = (int)$num2;
+            
+        }
+        
+    } else if((int)$num % 2 == 1) {
+	   
+        (int)$numeros++;
+        (int)$suma = (int)$suma + (int)$num;
+        
+    }
+?>
+	<form action="Ejercicio10.php" method="post">
+		<p>Introduzca un número:</p>
+		<input type="number" name="num">
+		<input type="hidden" name="repetir" value="<?=$repetir + 1?>">
+		<input type="hidden" name="mayor" value="<?=$mayor?>">
+		<input type="hidden" name="num2" value="<?=$num2?>">
+		<input type="hidden" name="numeros" value="<?=$numeros?>">
+		<input type="hidden" name="suma" value="<?=$suma?>">
+		<input type="submit" value="Siguiente">
+    </form>
+<?php
+} else {
+    echo 'Ha introducido ', (int)$repetir - 1, ' números. <br/>';
+    echo 'La media de los impares es ', (int)$suma / (int)$numeros, '. <br/>';
+    echo 'EL mayor de los pares es ', (int)$mayor, '. <br/>';
+}
+?>
+</body>
+</html>

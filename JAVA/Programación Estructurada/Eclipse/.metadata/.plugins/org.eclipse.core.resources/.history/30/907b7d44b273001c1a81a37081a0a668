@@ -1,0 +1,20 @@
+import funciones.Arrays;
+public class Ejercicio14_11 {
+
+	public static void main(String[] args) {
+		new Ejercicio14_11().contenido();
+		/*Crea una biblioteca de funciones para arrays de una dimensión de números enteros
+		  que contenga las siguientes funciones: */
+	}
+
+	public void contenido() {
+		
+		int num[] = new int[10];
+		
+		for(int i = 0; i < 10; i++) {
+			Arrays.generaArrayInt(10, 5, 15);
+		}
+		
+	}
+	
+}

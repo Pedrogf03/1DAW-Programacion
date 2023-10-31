@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+<?php 
+$num = $_POST['num'];
+$pos = $_POST['pos'];
+$neg = $_POST['neg'];
+$repetir = $_POST['repetir'];
+
+if(empty($repetir)){
+    $repetir = 11;
+}
+
+if($repetir >= 1) {
+    
+    if($num > 0) {
+      $pos++;
+    } else if($num < 0) {
+	  $neg++;
+    }
+}
+
+if($repetir > 1) {
+?>
+	<form action="Ejercicio5.php" method="post">
+		<p>Introduzca un número:</p>
+		<input type="number" name="num">
+		<input type="hidden" name="repetir" value="<?=$repetir - 1?>">
+		<input type="hidden" name="pos" value="<?=$pos?>">
+		<input type="hidden" name="neg" value="<?=$neg?>">
+    </form>
+<?php
+}
+echo "Hay $pos positivos y $neg negativos.";
+?>
+</body>
+</html>

@@ -1,0 +1,27 @@
+import funciones.Mates;
+public class Ejercicio14_8 {
+
+	public static void main(String[] args) {
+		new Ejercicio14_8().contenido();
+		/* Crea una biblioteca de funciones matemáticas que contenga las siguientes funciones. Recuerda que
+		   puedes usar unas dentro de otras si es necesario. */
+	}
+	
+	public void contenido() {
+		System.out.println(Mates.esCapicua(12321));
+		System.out.println(Mates.esPrimo(11));
+		System.out.println(Mates.SiguientePrimo(25));
+		System.out.println(Mates.Potencia(5, 2));
+		System.out.println(Mates.Digitos(1234567));
+		System.out.println(Mates.voltea(1234));
+		System.out.println(Mates.DigitoN(1234, 3));
+		System.out.println(Mates.PosicionDigito(12343, 3));
+		System.out.println(Mates.QuitaDetras(123456, 2));
+		System.out.println(Mates.QuitaDelante(123456, 2));
+		System.out.println(Mates.PegaDetras(12345, 6));
+		System.out.println(Mates.PegaDelante(23456, 1));
+		System.out.println(Mates.TrozoNum(2, 5, 123456));
+		System.out.println(Mates.JuntaNum(123, 456));		
+	}
+
+}

@@ -1,0 +1,3 @@
+<?php
+$millas = $_GET['millas'];
+echo $millas ,' millas son ', $millas * 1.60934 ,' kilómetros.';

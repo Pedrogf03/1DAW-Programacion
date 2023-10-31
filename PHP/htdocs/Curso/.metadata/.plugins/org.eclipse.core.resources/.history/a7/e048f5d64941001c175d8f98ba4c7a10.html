@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>Unidad 4</title>
+</head>
+<body>
+    <h1>Ejercicio 10 PhP</h1>
+    <p>Programa que pide números hasta que se introduzca un numero negativo y
+	nos diga cuantos números se han introducido, la media de los impares y el mayor de los pares.</p>
+<?php
+$num = $_POST['num'];
+$repetir = $_POST['repetir'];
+$suma = $_POST['suma'];
+$numeros = $_POST['numeros'];
+$num2 = 0;
+if($num >= 0){
+    if($num % 2 == 1) {
+        $numeros++;
+        $suma = $suma + $num;
+        echo $suma, $numeros;
+    } else if($num % 2 == 0) {
+        if($num > $num2) {
+            $mayor = $num;
+            $num2 = $num;
+        } else if($num2 > $num) {
+            $mayor = $num2;
+        }
+    }
+?>
+	<form action="Ejercicio10.php" method="post">
+		<input type="number" name="num">
+		<input type="hidden" name="repetir" value="<?=$repetir + 1?>">
+		<input type="hidden" name="suma" value="<?=$suma?>">
+		<input type="hidden" name="numeros" value="<?=$numeros?>">
+		<input type="submit" value="Aceptar">
+	</form>
+<?php
+} else {
+    echo 'Se han introducido ', $repetir - 1, ' números. <br/>';
+}
+?>
+</body>
+</html>

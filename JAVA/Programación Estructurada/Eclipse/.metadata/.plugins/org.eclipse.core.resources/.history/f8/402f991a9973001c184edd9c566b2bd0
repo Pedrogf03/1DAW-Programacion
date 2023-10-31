@@ -1,0 +1,10 @@
+
+public class Ejercicio14_8 {
+
+	public static void main(String[] args) {
+		new Ejercicio14_8().contenido();
+		/* Crea una biblioteca de funciones matemáticas que contenga las siguientes funciones. Recuerda que
+		   puedes usar unas dentro de otras si es necesario. */
+	}
+
+}

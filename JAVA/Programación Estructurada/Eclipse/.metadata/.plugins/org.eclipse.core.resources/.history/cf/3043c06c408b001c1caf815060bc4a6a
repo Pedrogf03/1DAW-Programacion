@@ -1,0 +1,22 @@
+
+public class probador {
+
+	public static void main(String[] args) {
+
+		for(int i = 1; i < 100; i++) {
+			int contador = 0;
+			for(int j = i; j >= 0; j--) {
+				if(i % j == 0) {
+					contador++;
+				}
+			}
+			if(contador <= 2) {
+				System.out.println(i +" es primo.");
+			} else {
+				System.out.println(i +" no es primo.");
+			}
+		}
+		
+	}
+
+}

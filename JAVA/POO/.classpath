@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Ejemplo/src"/>
+	<classpathentry excluding="Fraccion/" kind="src" path="Unidad15_16/src"/>
+	<classpathentry kind="src" path="Unidad15_16/src/Fraccion"/>
+	<classpathentry kind="src" path="Unidad17/src"/>
+	<classpathentry kind="output" path="Ejemplo/out/production/POO"/>
+</classpath>

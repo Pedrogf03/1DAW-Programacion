@@ -1,0 +1,10 @@
+import funciones.Mates;
+public class Ejercicio14_10 {
+
+	public static void main(String[] args) {
+		new Ejercicio14_10().contenido();
+		//Muestra todos los números capicúa entre 1 y 99999.
+
+	}
+
+}

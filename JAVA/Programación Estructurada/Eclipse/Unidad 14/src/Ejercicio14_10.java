@@ -1,0 +1,23 @@
+import funciones.Mates;
+public class Ejercicio14_10 {
+
+	public static void main(String[] args) {
+		new Ejercicio14_10().contenido();
+		//Muestra todos los números capicúa entre 1 y 99999.
+
+	}
+
+	public void contenido() {
+		
+		int contador = 0;
+		
+		for(int i = 1; i <= 99999; i++) {
+			if(Mates.esCapicua(i)) {
+				contador++;
+			}
+		}
+		
+		System.out.println("Entre 1 y 99999 hay "+ contador +" números capicúa.");
+		
+	}	
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>Unidad 4</title>
+</head>
+<body>
+    <h1>Ejercicio 10 PhP</h1>
+    <p>Programa que pide números hasta que se introduzca un numero negativo y
+	nos diga cuantos números se han introducido, la media de los impares y el mayor de los pares.</p>
+<?php 
+$num = $_POST['num'];
+$mayor = $_POST['mayor'];
+$neg = $_POST['neg'];
+$repetir = $_POST['repetir'];
+$num2 = $_POST['num2'];
+
+if($num > 0){
+    
+    if($num % 2 == 0) {
+        
+        if($num > $num2) {
+            
+            $mayor = $num;
+            $num2 = $num;
+            
+        } else if ()
+        
+    } else if($num < 0) {
+	   $neg++;
+    }
+    
+    if($repetir > 1) {
+?>
+	<form action="Ejercicio5.php" method="post">
+		<p>Introduzca un número:</p>
+		<input type="number" name="num">
+		<input type="hidden" name="repetir" value="<?=$repetir + 1?>">
+		<input type="hidden" name="pos" value="<?=$pos?>">
+		<input type="hidden" name="neg" value="<?=$neg?>">
+    </form>
+<?php
+    }
+}
+echo "Hay $pos positivos y $neg negativos.";
+?>
+</body>
+</html>

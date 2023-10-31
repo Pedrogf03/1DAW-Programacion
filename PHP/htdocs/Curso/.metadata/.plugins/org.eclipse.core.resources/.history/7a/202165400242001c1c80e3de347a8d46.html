@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>Unidad 4</title>
+</head>
+<body>
+    <h1>Ejercicio 10 PhP</h1>
+    <p>Programa que muestra las tablas de multiplicar.</p>
+<?php 
+$num = $_POST['num'];
+$multiplicador = $_POST['multiplicador'];
+
+if (empty($num)){
+?>
+	<form action="EJercicio1.php" method="post">
+		<input type="hidden" name="num" value="1">
+		<input type="hidden" name="multiplicador" value="1">
+		<input type="submit" value="Aceptar">
+	</form>
+<?php
+} else if ($num == 1) {
+    
+    for($i = $multiplicador; $i <= 10; $i++){
+        echo "$num * $i = ", $num * $i;
+    }
+?>
+	<form action="Ejercicio11.php" method="post">
+		<input type="hidden" name="num" value="<?$num + 1?>">
+		<input type="submit" value="Siguiente">
+	</form>
+<?php
+} else if ($multiplicador == 10) {
+    
+    for($i = $multiplicador; $i <= 10; $i++){
+        echo "$num * $i = ", $num * $i;
+    }
+    ?>
+	<form action="Ejercicio11.php" method="post">
+		<input type="hidden" name="multiplicador" value="<?$multiplicador + 1?>">
+		<input type="submit" value="Siguiente">
+	</form>
+<?php
+}
+?>
+    
+}
+?>
+</body>
+</html>

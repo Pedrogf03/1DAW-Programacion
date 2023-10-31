@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;filas&apos; in &apos;Las5Puertas.haGanadoJugador1()&apos; to &apos;columnas&apos;&#x0D;&#x0A;- Original project: &apos;Las5Puertas&apos;&#x0D;&#x0A;- Original element: &apos;Las5Puertas.haGanadoJugador1().filas&apos;&#x0D;&#x0A;- Renamed element: &apos;filas&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;filas&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Las5Puertas.java[Las5Puertas~haGanadoJugador1@filas!1349!1361!1353!1357!I!0!false" name="columnas" references="true" stamp="1642158536497" version="1.0"/>
+</session>

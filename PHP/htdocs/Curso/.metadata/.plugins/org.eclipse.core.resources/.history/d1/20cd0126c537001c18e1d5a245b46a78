@@ -1,0 +1,2 @@
+<?php
+echo $_GET ,' millas son ', $_GET * 1,60934 ,'kilómetros';
